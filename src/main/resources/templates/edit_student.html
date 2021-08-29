@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/students}">StudentManagement</a>
+                <a class="nav-link" th:href="@{/students}">Student Management</a>
             </li>
         </ul>
     </div>
@@ -53,6 +53,10 @@
                     <div class="form-group">
                         <label> email</label>
                         <input class="form-control" type="text" name="email" th:field="*{email}" placeholder="Enter Student email"/>
+                    </div>
+                    <div class="form-group">
+                        <label> Student GPA</label>
+                        <input class="form-control" type="double" name="gpa" th:field="*{gpa}" placeholder="Enter Student GPA"/>
                     </div>
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary">

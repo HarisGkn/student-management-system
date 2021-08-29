@@ -1,7 +1,5 @@
-package com.example.studentmanagementsystem.controller;
+package com.example.studentmanagementsystem;
 
-import com.example.studentmanagementsystem.entity.Student;
-import com.example.studentmanagementsystem.service.StudentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +16,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    //handler method to handle list studens an return model and view
+    //handler method to handle list students and return model and view
     @GetMapping("/students")
     public String listStudents(Model model) {
         model.addAttribute("students", studentService.getAllStudents());

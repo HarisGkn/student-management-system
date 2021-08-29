@@ -1,6 +1,6 @@
-package com.example.studentmanagementsystem.service;
+package com.example.studentmanagementsystem;
 
-import com.example.studentmanagementsystem.entity.Student;
+import com.example.studentmanagementsystem.Student;
 import java.util.List;
 
 public interface StudentService {

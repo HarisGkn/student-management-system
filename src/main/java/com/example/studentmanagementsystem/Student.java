@@ -1,4 +1,4 @@
-package com.example.studentmanagementsystem.entity;
+package com.example.studentmanagementsystem;
 
 
 import javax.persistence.*;
@@ -17,6 +17,16 @@ public class Student {
     private String lastName;
     @Column(name = "email")
     private String email;
+    @Column(name = "gpa")
+    private double gpa;
+
+    public double getGpa() {
+        return gpa;
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
 
     public Long getId() {
         return id;
@@ -54,9 +64,10 @@ public class Student {
 
     }
 
-    public Student(String firstName, String lastName, String email) {
+    public Student(String firstName, String lastName, String email, double gpa) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.gpa = gpa;
     }
 }
