@@ -8,11 +8,37 @@
   <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Student Management System</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/students}">Student Management</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/users}">List of Teachers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/register}">Register Teacher</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/login}">Login as a teacher</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container text-center">
   <h1>Students Management System</h1>
-  <h3><a th:href="@{/users}">List of Users</a></h3>
-  <h3><a th:href="@{/register}">Register</a></h3>
-  <h3><a th:href="@{/login}">Login</a></h3>
+  <h3>
+    Welcome to the student management system, login as a teacher/user to edit student info, or as an admin/principal to edit user and student info
+  </h3>
 </div>
 
 </body>
