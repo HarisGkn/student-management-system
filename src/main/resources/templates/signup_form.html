@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
-    <title>Sign Up - CodeJava</title>
+    <title>Sign Up </title>
     <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
     <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
@@ -71,6 +71,15 @@
                 <div class="col-8">
                     <input type="text" th:field="*{lastName}" class="form-control"
                            required minlength="2" maxlength="20" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Role: </label>
+                <div class="col-8">
+                    <input type="checkbox" id="role1" th:field="*{role}" value="teacher" name="teacher" class="form-control"/>
+                    <label for="role1">Teacher</label>
+                    <input type="checkbox" id="role2" th:field="*{role}" value="admin" name="admin" class="form-control" disabled/>
+                    <label for="role2">Admin</label>
                 </div>
             </div>
 

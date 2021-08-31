@@ -15,6 +15,7 @@ public class AppController {
     @Autowired
     private UserRepository userRepo;
 
+
     @GetMapping("")
     public String viewHomePage() {
         return "index";
@@ -37,6 +38,7 @@ public class AppController {
 
         return "register_success";
     }
+
 
     @GetMapping("/users")
     public String listUsers(Model model) {
